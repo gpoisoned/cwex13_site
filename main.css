@@ -1,0 +1,90 @@
+body{
+	background: white;
+}
+
+a:link{
+	color: black;
+}
+a:visited{
+	color:black;
+}
+a:hover{
+	color: red;
+}
+a:active{
+	color: green;
+}
+
+#mainContent{
+	margin: auto;	
+	height: inherit;
+	width: 900px;
+	height: auto;
+	background: white;
+}
+
+#Text, h1{
+	text-align: center;
+	display: block;
+	height:90px;
+	padding-bottom: 15px;
+	text-shadow: 3px 5px 2px #eee, 4px 6px 5px #707070;
+}
+
+
+#map{
+    width:850px;
+    height:600px;
+    margin:auto;
+}
+#info{
+	width: 900px;
+	height: auto;
+	margin-left: 20px;
+}
+
+#tableContainer{
+	width: auto;
+	margin:auto;
+	background: white;
+	display: block;
+}
+
+.bigTable{
+	width: 100%;
+	height: 100%
+}
+
+#table1{
+	width: 100%;
+	text-align: center;
+
+}
+
+th{
+	font:15;
+	font-style: italic;
+}
+
+#table2{
+	width: 100%;
+	float: right;
+	text-align: center;
+}
+
+#table3{
+	width: 100%;
+	text-align: center;
+}
+
+#table4{
+	width: 100%;
+	float: right;
+	text-align: center;
+}
+
+.label{
+	display: inline;
+	margin-left: 20px;
+	font-size: 20px;
+}

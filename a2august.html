@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Site A2 Augy 2013</title>
+</head>
+	<link rel="stylesheet" type="text/css" href="pages.css">
+		
+		<script type="text/javascript" src="js/global.js"></script>
+		<script type="text/javascript">
+		
+			function init(){
+
+				requestedImg = getQueryString();
+				if (typeof(requestedImg) == "undefined"){
+					showImage('WC61_Img/A2-Aug01.jpg');
+				}
+				else{
+					showImage(requestedImg);
+				}
+
+				removeQueryString();
+			}			
+
+			function gotoSite(x,idname){
+				var curImg = global_CurrentImage;
+				var destImg = x + curImg.split("-")[1];
+				document.getElementById(idname).href = destImg;
+			}
+
+		</script>
+				
+	</head>
+	<body onload="init();">
+		
+	<div id="mainContent">
+	<div id="navBar">
+		 <a  onclick="showImage('WC61_Img/A2-Aug01.jpg');">Aug1</a>
+		 <a  onclick="showImage('WC61_Img/A2-Aug02.jpg');">Aug2</a>
+		 <a  onclick="showImage('WC61_Img/A2-Aug03.jpg');">Aug3</a>
+		 <a  onclick="showImage('WC61_Img/A2-Aug04.jpg');">Aug4</a>
+		 <a  onclick="showImage('WC61_Img/A2-Aug05.jpg');">Aug5</a>
+		 <a  onclick="showImage('WC61_Img/A2-Aug06.jpg');">Aug6</a>
+		 <a  onclick="showImage('WC61_Img/A2-Aug07.jpg');">Aug7</a>
+		 <a  onclick="showImage('WC61_Img/A2-Aug08.jpg');">Aug8</a>
+		 <a  onclick="showImage('WC61_Img/A2-Aug09.jpg');">Aug9</a>
+		 <a  onclick="showImage('WC61_Img/A2-Aug10.jpg');">Aug10</a>
+		 <a  onclick="showImage('WC61_Img/A2-Aug11.jpg');">Aug11</a>
+		 <a  onclick="showImage('WC61_Img/A2-Aug12.jpg');">Aug12</a>
+		 <a  onclick="showImage('WC61_Img/A2-Aug13.jpg');">Aug13</a>
+		 <a  onclick="showImage('WC61_Img/A2-Aug14.jpg');">Aug14</a>
+		 <a  onclick="showImage('WC61_Img/A2-Aug15.jpg');">Aug15</a>
+		 <a  onclick="showImage('WC61_Img/A2-Aug16.jpg');">Aug16</a>
+		 <a  onclick="showImage('WC61_Img/A2-Aug17.jpg');">Aug17</a>
+		 <a  onclick="showImage('WC61_Img/A2-Aug18.jpg');">Aug18</a>
+		 <a  onclick="showImage('WC61_Img/A2-Aug19.jpg');">Aug19</a>
+		 <a  onclick="showImage('WC61_Img/A2-Aug20.jpg');">Aug20</a>
+		 <a  onclick="showImage('WC61_Img/A2-Aug21.jpg');">Aug21</a>
+		 <a  onclick="showImage('WC61_Img/A2-Aug22.jpg');">Aug22</a>
+		 <a  onclick="showImage('WC61_Img/A2-Aug23.jpg');">Aug23</a>
+		 <a  onclick="showImage('WC61_Img/A2-Aug24.jpg');">Aug24</a>
+		 <a  onclick="showImage('WC61_Img/A2-Aug25.jpg');">Aug25</a>
+		 <a  onclick="showImage('WC61_Img/A2-Aug26.jpg');">Aug26</a>
+		 <a  onclick="showImage('WC61_Img/A2-Aug27.jpg');">Aug27</a>
+		 <a  onclick="showImage('WC61_Img/A2-Aug28.jpg');">Aug28</a>
+		 <a  onclick="showImage('WC61_Img/A2-Aug29.jpg');">Aug29</a>
+		 <a  onclick="showImage('WC61_Img/A2-Aug30.jpg');">Aug30</a>
+		 <a  onclick="showImage('WC61_Img/A2-Aug31.jpg');">Aug31</a>
+	</div>	
+	<div class= "prevNext">
+		<div id="prev">
+			<a id="prevMonth" href="" onclick="prevMonth('prevMonth');"><img id="prevButton" src="images/prev.png"/></a>
+		</div>
+		<div id="next">
+			<a id="nextMonth" href="" onclick="nextMonth('nextMonth');"><img id="nextButton" src="images/next.png"/></a>
+		</div>
+		<div class="clear"></div>
+	</div>
+	<div id="container">
+		<div id="sideBar">
+				<div id="navList">
+					<a href="" id="a1" onclick="gotoSite('a1august.html?WC49_Img/A1-','a1');">Link to A1</a></br>
+					<a href="" id="a3" onclick="gotoSite('a3august.html?WC68_Img/A3-','a3');">Link to A3</a></br>
+					<a href="radiometer_august.html">Radiometer</a></br>
+					<a href="" id="home" onclick="goHome();">Home</a></br>
+					
+				</div>
+				
+		</div>
+
+
+		<div id="curImage">
+			<img  id="Image" src="WC61_Img/A2-Aug01.jpg" alt="WC61_Img/A2-Aug01.jpg" title="WC61_Img/A2-Aug01.jpg" />
+		</div>
+
+		<div class="clear"></div>
+	</div>
+
+	</div>
+
+	<!-- <table id="container" >
+		<tr>
+			<td width="200px">
+					<div class="sideBar">
+						<a href="">Link to A2</a></br>
+						<a href="">Link to A3</a></br>
+						<a href="">Home</a></br>
+					</div>
+			</td>
+			<td>					
+						<div id="curImage"> 
+							<img  id="Image" src="images/05.jpg" alt="images/05.jpg" title="images/05.jpg" />
+						</div>											
+			</td>	
+
+		</tr>
+							
+
+	</table> -->	
+
+</body>
+</html>

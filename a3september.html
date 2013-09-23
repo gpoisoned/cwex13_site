@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Site A3 September 2013</title>
+</head>
+	<link rel="stylesheet" type="text/css" href="pages.css">
+		
+		<script type="text/javascript" src="js/global.js"></script>
+		<script type="text/javascript">
+		
+			function init(){
+
+				requestedImg = getQueryString();
+				if (typeof(requestedImg) == "undefined"){
+					showImage('WC68_Img/A3-Sep01.jpg');
+				}
+				else{
+					showImage(requestedImg);
+				}
+
+				removeQueryString();
+			}			
+
+			function gotoSite(x,idname){
+				var curImg = global_CurrentImage;
+				var destImg = x + curImg.split("-")[1];
+				document.getElementById(idname).href = destImg;
+			}
+
+		</script>
+				
+	</head>
+	<body onload="init();">
+	<div id="mainContent">
+		
+	<div id="navBar">
+		 <a href="javascript:void(0);" onclick="showImage('WC68_Img/A3-Sep01.jpg');">Sep1</a>
+		 <a href="javascript:void(0);" onclick="showImage('WC68_Img/A3-Sep02.jpg');">Sep2</a>
+		 <a href="javascript:void(0);" onclick="showImage('WC68_Img/A3-Sep03.jpg');">Sep3</a>
+		 <a href="javascript:void(0);" onclick="showImage('WC68_Img/A3-Sep04.jpg');">Sep4</a>
+		 <a href="javascript:void(0);" onclick="showImage('WC68_Img/A3-Sep05.jpg');">Sep5</a>
+	</div>	
+	
+	<div class= "prevNext">
+		<div id="prev">
+			<a id="prevMonth" href="" onclick="prevMonth('prevMonth');"><img id="prevButton" src="images/prev.png"/></a>
+		</div>
+		<div id="next">
+			<a id="nextMonth" href="" onclick="nextMonth('nextMonth');"><img id="nextButton" src="images/next.png"/></a>
+		</div>
+		<div class="clear"></div>
+	</div>
+
+	<div id="container">
+		<div id="sideBar">
+				<div id="navList">
+					<a href="" id="a1" onclick="gotoSite('a1september.html?WC49_Img/A1-','a1');">Link to A1</a></br>
+					<a href="" id="a2" onclick="gotoSite('a2september.html?WC61_Img/A2-','a2');">Link to A3</a></br>
+					<a href="radiometer_september.html">Radiometer</a></br>
+					<a href="" id="home" onclick="goHome();">Home</a></br>
+					
+				</div>
+				
+		</div>
+
+
+		<div id="curImage">
+			<img  id="Image" src="WC68_Img/A3-Sep01.jpg" alt="WC68_Img/A3-Sep01.jpg" title="WC68_Img/A3-Sep01.jpg" />
+		</div>
+
+		<div class="clear"></div>
+	</div>
+	
+	</div>
+
+
+	<!-- <table id="container" >
+		<tr>
+			<td width="200px">
+					<div class="sideBar">
+						<a href="">Link to A2</a></br>
+						<a href="">Link to A3</a></br>
+						<a href="">Home</a></br>
+					</div>
+			</td>
+			<td>					
+						<div id="curImage"> 
+							<img  id="Image" src="images/05.jpg" alt="images/05.jpg" title="images/05.jpg" />
+						</div>											
+			</td>	
+
+		</tr>
+							
+
+	</table> -->	
+
+</body>
+</html>

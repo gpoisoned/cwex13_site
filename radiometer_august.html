@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Radiometer August 2013</title>
+</head>
+	<link rel="stylesheet" type="text/css" href="pages.css">
+	<script type="text/javascript" src="js/global_rad.js"></script>
+
+	<script type="text/javascript">
+		function init(){
+
+				requestedImg = getQueryString();
+				if (typeof(requestedImg) == "undefined"){
+					showImage1('Rad_aug/2013-08-01_1.jpeg');
+					showImage2('Rad_aug/2013-08-01_2.jpeg');
+				}
+				else{
+					showImage1(requestedImg);
+					showImage2(requestedImg);
+				}
+
+				removeQueryString();
+			}	
+
+	</script>
+
+</head>
+
+	<body onload="init();">
+		
+	<div id="mainContent">	
+	<div id="navBar">	
+		 <a  onclick="displayImage('Rad_aug/2013-08-01_1.jpeg','Rad_aug/2013-08-01_2.jpeg');">aug1</a>
+		 <a  onclick="displayImage('Rad_aug/2013-08-02_1.jpeg','Rad_aug/2013-08-02_2.jpeg');">aug2</a>
+		 <a  onclick="displayImage('Rad_aug/2013-08-03_1.jpeg','Rad_aug/2013-08-03_2.jpeg');">aug3</a>
+		 <a  onclick="displayImage('Rad_aug/2013-08-04_1.jpeg','Rad_aug/2013-08-04_2.jpeg');">aug4</a>
+		 <a  onclick="displayImage('Rad_aug/2013-08-05_1.jpeg','Rad_aug/2013-08-05_2.jpeg');">aug5</a>
+		 <a  onclick="displayImage('Rad_aug/2013-08-06_1.jpeg','Rad_aug/2013-08-06_2.jpeg');">aug6</a>
+		 <a  onclick="displayImage('Rad_aug/2013-08-07_1.jpeg','Rad_aug/2013-08-07_2.jpeg');">aug7</a>
+		 <a  onclick="displayImage('Rad_aug/2013-08-08_1.jpeg','Rad_aug/2013-08-08_2.jpeg');">aug8</a>
+		 <a  onclick="displayImage('Rad_aug/2013-08-09_1.jpeg','Rad_aug/2013-08-09_2.jpeg');">aug9</a>
+		 <a  onclick="displayImage('Rad_aug/2013-08-10_1.jpeg','Rad_aug/2013-08-10_2.jpeg');">aug10</a>
+		 <a  onclick="displayImage('Rad_aug/2013-08-11_1.jpeg','Rad_aug/2013-08-11_2.jpeg');">aug11</a>
+		 <a  onclick="displayImage('Rad_aug/2013-08-12_1.jpeg','Rad_aug/2013-08-12_2.jpeg');">aug12</a>
+		 <a  onclick="displayImage('Rad_aug/2013-08-13_1.jpeg','Rad_aug/2013-08-13_2.jpeg');">aug13</a>
+		 <a  onclick="displayImage('Rad_aug/2013-08-14_1.jpeg','Rad_aug/2013-08-14_2.jpeg');">aug14</a>
+		 <a  onclick="displayImage('Rad_aug/2013-08-15_1.jpeg','Rad_aug/2013-08-15_2.jpeg');">aug15</a>
+		 <a  onclick="displayImage('Rad_aug/2013-08-16_1.jpeg','Rad_aug/2013-08-16_2.jpeg');">aug16</a>
+		 <a  onclick="displayImage('Rad_aug/2013-08-17_1.jpeg','Rad_aug/2013-08-17_2.jpeg');">aug17</a>
+		 <a  onclick="displayImage('Rad_aug/2013-08-18_1.jpeg','Rad_aug/2013-08-18_2.jpeg');">aug18</a>
+		 <a  onclick="displayImage('Rad_aug/2013-08-19_1.jpeg','Rad_aug/2013-08-19_2.jpeg');">aug19</a>
+		 <a  onclick="displayImage('Rad_aug/2013-08-20_1.jpeg','Rad_aug/2013-08-20_2.jpeg');">aug20</a>
+		 <a  onclick="displayImage('Rad_aug/2013-08-21_1.jpeg','Rad_aug/2013-08-21_2.jpeg');">aug21</a>
+		 <a  onclick="displayImage('Rad_aug/2013-08-22_1.jpeg','Rad_aug/2013-08-22_2.jpeg');">aug22</a>
+		 <a  onclick="displayImage('Rad_aug/2013-08-23_1.jpeg','Rad_aug/2013-08-23_2.jpeg');">aug23</a>
+		 <a  onclick="displayImage('Rad_aug/2013-08-24_1.jpeg','Rad_aug/2013-08-24_2.jpeg');">aug24</a>
+		 <a  onclick="displayImage('Rad_aug/2013-08-25_1.jpeg','Rad_aug/2013-08-25_2.jpeg');">aug25</a>
+		 <a  onclick="displayImage('Rad_aug/2013-08-26_1.jpeg','Rad_aug/2013-08-26_2.jpeg');">aug26</a>
+		 <a  onclick="displayImage('Rad_aug/2013-08-27_1.jpeg','Rad_aug/2013-08-27_2.jpeg');">aug27</a>
+		 <a  onclick="displayImage('Rad_aug/2013-08-28_1.jpeg','Rad_aug/2013-08-28_2.jpeg');">aug28</a>
+		 <a  onclick="displayImage('Rad_aug/2013-08-29_1.jpeg','Rad_aug/2013-08-29_2.jpeg');">aug29</a>
+		 <a  onclick="displayImage('Rad_aug/2013-08-30_1.jpeg','Rad_aug/2013-08-30_2.jpeg');">aug30</a>
+		 <a  onclick="displayImage('Rad_aug/2013-08-31_1.jpeg','Rad_aug/2013-08-31_2.jpeg');">aug31</a>
+	</div>	
+	<div class= "prevNext">
+		<div id="prev">
+			<a id="prevMonth" href="" onclick="radPrevMonth('prevMonth','aug');"><img id="prevButton" src="images/prev.png"/></a>
+		</div>
+		<div id="next">
+			<a id="nextMonth" href="" onclick="radNextMonth('nextMonth','aug');"><img id="nextButton" src="images/next.png"/></a>
+		</div>
+		<div class="clear"></div>
+	</div>
+
+	<div id="rad_container">
+		<div id="sideBar">
+				<div id="navList">
+					<a href="" id="home" onclick="goHome();">Home</a></br>
+				</div>
+				
+		</div>
+
+
+		<div id="curImage">
+			<img  id="Image1" src="Rad_aug/2013-08-01_1.jpeg" alt="Rad_aug/2013-08-01_1.jpeg" title="Rad_aug/2013-08-01_1.jpeg" />
+			<img  id="Image2" src="Rad_aug/2013-08-01_2.jpeg" alt="Rad_aug/2013-08-01_2.jpeg" title="Rad_aug/2013-08-01_2.jpeg" />
+		</div>
+
+		<div class="clear"></div>
+	</div>
+
+	</div>
+
+</body>
+</html>
