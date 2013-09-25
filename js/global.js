@@ -1,5 +1,5 @@
 var global_CurrentImage;
-	function removeQueryString(){
+			function removeQueryString(){
 		    	
 			    var uri = window.location.toString();
 				if (uri.indexOf("?") > 0) {
