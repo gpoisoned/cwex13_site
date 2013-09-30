@@ -20,6 +20,13 @@
 		              e.style.display ='block';
 		          }
 		  }
+
+		  	function goto(idName){
+		  		var e = document.getElementById(idName);
+		  		e.href="windrose_a1.html";
+		  	}
+
+
 	  </script>
 
 <body>	
@@ -32,9 +39,9 @@
 		<div class="label">
 			<a href="#" onclick="toggleVisibility('info')">About CWEX</a>
 			<a href="#" onclick="toggleVisibility('map');">View Map</a>
+			<a href="#" id ="windrose" onclick="goto('windrose');" >View Windrose</a>
 		</div>
 		
-	
 		<div id="info" style="display:none">
 			<p>
 				This is where the info for the CWEX will go !!
@@ -43,10 +50,10 @@
 		</div>
 
 
-
 		<div id="map" style="display:none">
 		  <img id="map" src="map.png" title="map.png"/>
 		 </div>
+
 
 		<div id ="tableContainer">
 		  
@@ -318,6 +325,21 @@
 		</div>
 	</div>
 
+
+ <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-43811013-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+	
 
 </body>
 

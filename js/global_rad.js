@@ -2,7 +2,7 @@ var global_CurrentImage1;
 var global_CurrentImage2;
 var globalRetAddrArr;
 
-			function removeQueryString(){
+		function removeQueryString(){
 		    	
 			    var uri = window.location.toString();
 				if (uri.indexOf("?") > 0) {
@@ -16,9 +16,24 @@ var globalRetAddrArr;
 				var query = window.location.toString();	
 				var FinalQuery = query.split("?")[1];
 				return FinalQuery;
-				//var FinalQuery = query.slice(1,query.length);		
-			}						
+			}
 
+			function splitQueryString(x){
+				var to_ret = new Array();
+				to_ret[0] = x.split('&')[0];
+				to_ret[1] = x.split('&')[1];
+				return to_ret;
+			}
+
+			function setRetAddr(x){
+				globalRetAddrArr = x;
+			}
+
+			function gotoRetAddr(idName){
+				var e = document.getElementById(idName);
+				e.href=globalRetAddrArr;
+			}
+s
 			function showImage1(imgName) {
 				var curImage = document.getElementById("Image1");				
 				curImage.src = imgName;	
@@ -38,7 +53,6 @@ var globalRetAddrArr;
 			function displayImage(img1,img2){
 				showImage1(img1);
 				showImage2(img2);
-
 			}
 
 			function goHome(){

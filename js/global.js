@@ -24,8 +24,12 @@ var global_CurrentImage;
 				// alert(getSiteAttr());
 				// var retAddr = window.location.toString();
 				// alert(retAddr);
+
+				var curUrl = window.location.toString()+'?'+global_CurrentImage;
+				var req_img = radImgPath();
+
 				var elem = document.getElementById(idname);
-				elem.href = "radiometer_"+getMonth()+".html";
+				elem.href = "radiometer_"+getMonth()+".html"+"?"+req_img+"&"+curUrl;
 				//+"?"+radImgPath()+"&"+getSiteName();
 				// alert(elem);
 				// // "+"?"+radImgPath();

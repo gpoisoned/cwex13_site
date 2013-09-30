@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+-<!DOCTYPE html>
 <html>
 <head>
 	<title>Radiometer July 2013</title>
@@ -8,20 +8,21 @@
 
 	<script type="text/javascript">
 		function init(){
+				var query_str =  splitQueryString(getQueryString());
 
-				requestedImg = getQueryString();
+				requestedImg = query_str[0];	
+							
 				if (typeof(requestedImg) == "undefined"){
 					showImage1('Rad_jul/2013-07-01_1.jpeg');
 					showImage2('Rad_jul/2013-07-01_2.jpeg');
 				}
 				else{
-					showImage1(requestedImg);
-					showImage2(requestedImg);
+					showImage1(requestedImg+'_1.jpeg');
+					showImage2(requestedImg+'_2.jpeg');
 				}
 
 				removeQueryString();
 			}	
-
 	</script>
 
 </head>
@@ -76,6 +77,7 @@
 	<div id="rad_container">
 		<div id="sideBar">
 				<div id="navList">
+					<!-- <a href="" id="ret" onclick="gotoRetAddr('ret');">Back</a></br> -->
 					<a href="" id="home" onclick="goHome();">Home</a></br>
 				</div>
 				
@@ -91,6 +93,19 @@
 	</div>
 
 	</div>
+	
+ <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-43811013-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
 
 </body>
 </html>
