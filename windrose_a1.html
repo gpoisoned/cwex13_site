@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Site A1 Windrose</title>
+</head>
+	<link rel="stylesheet" type="text/css" href="pages.css">		
+		<script type="text/javascript" src="js/global_windrose.js"></script>
+			
+	</head>
+	<body onload="init('49','49_windrose/WS40.jpeg');">
+		
+	<div id="mainContent">	
+	<div id="navBar">
+		 <a  onclick="showImage('49_windrose/WS40.jpeg');">40m</a>
+		 <a  onclick="showImage('49_windrose/WS60.jpeg');">60m</a>
+		 <a  onclick="showImage('49_windrose/WS80.jpeg');">80m</a>
+		 <a  onclick="showImage('49_windrose/WS100.jpeg');">100m</a>
+		 <a  onclick="showImage('49_windrose/WS120.jpeg');">120m</a>
+		 <a  onclick="showImage('49_windrose/WS140.jpeg');">140m</a>
+		 <a  onclick="showImage('49_windrose/WS160.jpeg');">160m</a>
+		 <a  onclick="showImage('49_windrose/WS180.jpeg');">180m</a>
+		 <a  onclick="showImage('49_windrose/WS200.jpeg');">200m</a>
+		 <a  onclick="showImage('49_windrose/WS220.jpeg');">220m</a>
+		
+	</div>	
+	<div class= "prevNext">
+		<div id="prev" >
+			<img id="prevButton" src="images/prev.png" />
+		</div>
+		<div id="next">
+			<a id="nextMonth" href="" onclick="nextSite('nextMonth');"><img id="nextButton" src="images/next.png" /></a>
+		</div>
+		<div class="clear"></div>
+	</div>
+
+	<div id="container">
+		<div id="sideBar">
+				<div id="navList">
+					<a href="" id="home" onclick="goHome();">Home</a></br>
+				</div>				
+		</div>
+
+		<div id="curImage">
+			<img  id="Image" src="49_windrose/WS40.jpeg" alt="49_windrose/WS40.jpeg" title="49_windrose/WS40.jpeg" />
+		</div>
+
+		<div class="clear"></div>
+	</div>
+	</div>
+
+	
+ <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-43811013-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>
