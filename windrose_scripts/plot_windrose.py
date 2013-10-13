@@ -132,49 +132,6 @@ if __name__ == '__main__':
 		WS220 = np.append(WS220,WS_220m)
 		WD220 = np.append(WD220,wd_220m_deg)
 
-	# # # Fix for error with NAN values:
-	# # #    Convert nan -> 0
-	# WS40[np.isnan(WS40)] = -0.0
-	# WD40[np.isnan(WD40)] = -0.0
-	# WS60[np.isnan(WS60)] = -0.0
-	# WD60[np.isnan(WD60)] = -0.0
-	# WS80[np.isnan(WS80)] = -0.0
-	# WD80[np.isnan(WD80)] = -0.0
-	# WS100[np.isnan(WS100)] = -0.0
-	# WD100[np.isnan(WD100)] = -0.0
-	# WS120[np.isnan(WS120)] = -0.0
-	# WD120[np.isnan(WD120)] = -0.0
-	# WS140[np.isnan(WS140)] = -0.0
-	# WD140[np.isnan(WD140)] = -0.0
-	# WS160[np.isnan(WS160)] = -0.0
-	# WD160[np.isnan(WD160)] = -0.0
-	# WS180[np.isnan(WS180)] = -0.0
-	# WD180[np.isnan(WD180)] = -0.0
-	# WS200[np.isnan(WS200)] = -0.0
-	# WD200[np.isnan(WD200)] = -0.0
-	# WS220[np.isnan(WS220)] = -0.0
-	# WD220[np.isnan(WD220)] = -0.0
-
-	# WS40=WS40[np.isfinite(WS40)]
-	# WD40=WD40[np.isfinite(WD40)]	
-	# WS60=WS60[np.isfinite(WS60)]
-	# WD60=WD60[np.isfinite(WD60)]
-	# WS80=WS80[np.isfinite(WS80)]
-	# WD80=WD80[np.isfinite(WD80)]
-	# WS100=WS100[np.isfinite(WS100)]
-	# WD100=WD100[np.isfinite(WD100)]
-	# WS120=WS120[np.isfinite(WS120)]
-	# WD120=WD120[np.isfinite(WD120)]
-	# WS140=WS140[np.isfinite(WS140)]
-	# WD140=WD140[np.isfinite(WD140)]
-	# WS160=WS160[np.isfinite(WS160)]
-	# WD160=WD160[np.isfinite(WD160)]
-	# WS180=WS180[np.isfinite(WS180)]
-	# WD180=WD180[np.isfinite(WD180)]
-	# WS200=WS200[np.isfinite(WS200)]
-	# WD200=WD200[np.isfinite(WD200)]
-	# WS220=WS220[np.isfinite(WS220)]
-	# WD220=WD220[np.isfinite(WD220)]
 
 	# Mask invalid values:
 	WS40=np.ma.masked_invalid(WS40)

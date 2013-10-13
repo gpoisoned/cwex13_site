@@ -63,10 +63,14 @@ def get_WS(fileList1, fileList2):
                     array1 = np.concatenate((array1,x),axis=0)
                     array2 = np.concatenate((array2,x),axis=0)
 
-        print array1.shape, array2.shape
-        print type(array1), type(array2)
+        #print array1.shape, array2.shape
+        #print type(array1), type(array2)
+        #print "Printing max of two array before diff: ",np.max(array1[:,1].astype(np.float)), np.max(array2[:,1].astype(np.float))
         diff_array = dif_ws_arr1_arr2(array1,array2)
-        diff_array = np.array(diff_array)
+        diff_array = np.array(diff_array).astype(np.float)
+        # Mask invalid values:
+        #diff_array = np.ma.masked_invalid(diff_array)
+        #print type(diff_array)
         return (diff_array, array1[:,2].astype(np.float))
 
 
@@ -74,21 +78,15 @@ def dif_ws_arr1_arr2(array1,array2):
     data1= array1[:,1].astype(np.float)
     data2= array2[:,1].astype(np.float)
     to_ret = np.array(np.subtract(data1, data2))
+   # print max(list(data1))
+   # print min(list(data1))
+   # print max(list(data2))
+   # print min(list(data2))
+    print "data1 == data2:", np.equal(data1,data2)
+    #print to_ret.shape, type(to_ret[0])
+    #print np.max(to_ret), np.min(to_ret)
     return to_ret
 
-
-#def equalize_on_wd(array1,array2,wd_pos):
-#    to_ret_arr_1 =[[]]
-#    to_ret_arr_2 =[[]]
-#    for x in array1:
-#        for y in array2:
-#            if (x[wd_pos].astype(np.float) !=np.NAN and y[wd_pos].astype(np.float) !=np.NAN):
-#                to_ret_arr_1.append(list(x))
-#                to_ret_arr_2.append(list(y))
-#        to_ret_arr_1 = np.array(to_ret_arr_1)
-#    to_ret_arr_2 = np.array(to_ret_arr_2)
-#    return (to_ret_arr1,to_ret_arr2)
-            
 
 def equalize_arrays_on_time_and_wd(array1, array2, wd_pos):
     num_cols = array2.shape[1]
@@ -109,7 +107,11 @@ def equalize_arrays_on_time_and_wd(array1, array2, wd_pos):
     #print to_ret_arr1.shape, to_ret_arr2.shape
     return (to_ret_arr1, to_ret_arr2)
 
-               
+
+def create_plots(x,y):
+        plt.scatter(x,y)
+        plt.show()
+
 if __name__ == '__main__':
         dir1 = sys.argv[1]
         site_1 = sorted(dir_to_list(dir1))
@@ -118,9 +120,10 @@ if __name__ == '__main__':
         site_2 = sorted(dir_to_list(dir2))
 
         (x,y) = get_WS(site_1,site_2)
-        print x, x.shape
-        print y, y.shape
-
+        create_plots(y,x)
+#        print x, x.shape
+#        print y, y.shape
+#        print np.amax(x)
 
 
         
