@@ -43,7 +43,20 @@ function showImage(imgName) {
 	curImage.src = imgName;	
 	curImage.alt = imgName;
 	curImage.title = imgName;
-	global_CurrentImage = imgName.split('/')[1];				
+	global_CurrentImage = imgName.split('/')[1];	
+	
+	var img2 = imgName.split('.')[0]+'_day.jpeg';
+	var img1 = imgName.split('.')[0]+'_night.jpeg'
+	var disp1 = document.getElementById("night");
+	var disp2 = document.getElementById("day");	
+	disp1.src = img1;
+	disp1.alt = img1;
+	disp1.title= img1;
+
+	disp2.src = img2;
+	disp2.alt = img2;
+	disp2.title= img2;
+
 }	
 
 function nextSite(idName){
