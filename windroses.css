@@ -1,0 +1,116 @@
+body{
+	width: 100%;
+	height: auto;
+	margin: auto;
+}
+
+a:link{
+	color: orange;
+}
+a:visited{
+	color:orange;
+}
+a:hover{
+	color: green;
+}
+a:active{
+	color: orange;
+}
+
+#mainContent{
+	width:80%;
+	overflow: hidden;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#navBar{
+	width:980px;
+	height: 40px;
+	text-align: center;
+	color: orange;
+	display: block;
+	margin: auto;
+	float: left
+}
+
+.leftRight{
+	width: 900px;
+	margin: auto;
+}
+
+#container{
+	width: auto;
+	/*width: 980px;*/
+	height: 2200px;
+	border-style: outset;
+	border-color: "green";
+}
+
+#rad_container{
+	width: auto;
+	width: 980px;
+	height: 1300px;
+	border-style: outset;
+	border-color: "green";
+}
+
+
+#sideBar{
+	width: 100px;
+	height: inherit;
+	float: left;
+	margin-top: 20%;
+}
+
+#navList{
+	margin-left: 10px;
+	margin-top: 80%;	
+	font-family: fantasy;
+	display: block;
+}
+
+#curImage{
+	text-align: center;	
+	width: 80%;
+	height: 1500px;
+	float: left;
+}
+
+#day{
+	height: 650px;
+	width: 650px;
+}
+#night{
+	height: 650px;
+	width: 650px;
+}
+
+img {
+		margin: 10px 0 10px 0;
+		/*height:700px;
+		width: 800px;*/
+	}
+.clear{
+	clear: both;
+}
+
+.prevNext{
+	width: 980px;
+}
+
+#prevButton{
+	width: 40px;
+	height:40px;
+	padding-left: -20;
+}
+#nextButton{
+	width: 40px;
+	height:40px;
+}
+#prev{
+	float: left;
+}
+#next{
+	float: right;
+}
