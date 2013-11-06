@@ -31,7 +31,8 @@ a:active{
 	color: orange;
 	display: block;
 	margin: auto;
-	float: left
+	float: left;
+	position: fixed;
 }
 
 .leftRight{
@@ -45,7 +46,7 @@ a:active{
 	height: 750px;
 	border-style: outset;
 	border-color: "green";
-}
+}	
 
 #rad_container{
 	width: auto;
