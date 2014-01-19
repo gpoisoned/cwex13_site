@@ -88,4 +88,3 @@ s
 				}
 				document.getElementById(idname).href="radiometer_"+nextMth+".html";
 			}
-			

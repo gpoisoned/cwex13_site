@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>A1- A3 August 2013</title>
+</head>
+	<link rel="stylesheet" type="text/css" href="pages.css">
+	<script type="text/javascript" src="js/global_rad.js"></script>
+
+	<script type="text/javascript">
+		function init(){
+
+				var query_str =  splitQueryString(getQueryString());
+
+				requestedImg = query_str[0];	
+				setRetAddr(query_str[1]);
+				
+				if (typeof(requestedImg) == "undefined"){
+					showImage1('A1-A3/A1-A3_2013-08-01_80m_averaged.png');
+					showImage2('A1-A3/A1-A3_2013-08-01_80m_unaveraged.png');
+				}
+
+				removeQueryString();
+			}	
+
+	</script>
+
+</head>
+
+	<body onload="init();">
+		
+	<div id="mainContent">	
+	<div id="navBar">	
+		 <a  onclick="displayImage('A1-A3/A1-A3_2013-08-01_80m_averaged.png','A1-A3/A1-A3_2013-08-01_80m_unaveraged.png');">Aug1</a>
+		 <a  onclick="displayImage('A1-A3/A1-A3_2013-08-02_80m_averaged.png','A1-A3/A1-A3_2013-08-02_80m_unaveraged.png');">Aug2</a>
+		 <a  onclick="displayImage('A1-A3/A1-A3_2013-08-03_80m_averaged.png','A1-A3/A1-A3_2013-08-03_80m_unaveraged.png');">Aug3</a>
+		 <a  onclick="displayImage('A1-A3/A1-A3_2013-08-04_80m_averaged.png','A1-A3/A1-A3_2013-08-04_80m_unaveraged.png');">Aug4</a>
+		 <a  onclick="displayImage('A1-A3/A1-A3_2013-08-05_80m_averaged.png','A1-A3/A1-A3_2013-08-05_80m_unaveraged.png');">Aug5</a>
+		 <a  onclick="displayImage('A1-A3/A1-A3_2013-08-06_80m_averaged.png','A1-A3/A1-A3_2013-08-06_80m_aunveraged.png');">Aug6</a>
+		 <a  onclick="displayImage('A1-A3/A1-A3_2013-08-08_80m_averaged.png','A1-A3/A1-A3_2013-08-08_80m_unaveraged.png');">Aug7</a>
+		 <a  onclick="displayImage('A1-A3/A1-A3_2013-08-08_80m_averaged.png','A1-A3/A1-A3_2013-08-08_80m_unaveraged.png');">Aug8</a>
+		 <a  onclick="displayImage('A1-A3/A1-A3_2013-08-09_80m_averaged.png','A1-A3/A1-A3_2013-08-09_80m_unaveraged.png');">Aug9</a>
+		 <a  onclick="displayImage('A1-A3/A1-A3_2013-08-10_80m_averaged.png','A1-A3/A1-A3_2013-08-10_80m_unaveraged.png');">Aug10</a>
+		 <a  onclick="displayImage('A1-A3/A1-A3_2013-08-11_80m_averaged.png','A1-A3/A1-A3_2013-08-11_80m_unaveraged.png');">Aug11</a>
+		 <a  onclick="displayImage('A1-A3/A1-A3_2013-08-12_80m_averaged.png','A1-A3/A1-A3_2013-08-12_80m_unaveraged.png');">Aug12</a>
+		 <a  onclick="displayImage('A1-A3/A1-A3_2013-08-13_80m_averaged.png','A1-A3/A1-A3_2013-08-13_80m_unaveraged.png');">Aug13</a>
+		 <a  onclick="displayImage('A1-A3/A1-A3_2013-08-14_80m_averaged.png','A1-A3/A1-A3_2013-08-14_80m_unaveraged.png');">Aug14</a>
+		 <a  onclick="displayImage('A1-A3/A1-A3_2013-08-15_80m_averaged.png','A1-A3/A1-A3_2013-08-15_80m_unaveraged.png');">Aug15</a>
+		 <a  onclick="displayImage('A1-A3/A1-A3_2013-08-16_80m_averaged.png','A1-A3/A1-A3_2013-08-16_80m_unaveraged.png');">Aug16</a>
+		 <a  onclick="displayImage('A1-A3/A1-A3_2013-08-17_80m_averaged.png','A1-A3/A1-A3_2013-08-17_80m_unaveraged.png');">Aug17</a>
+		 <a  onclick="displayImage('A1-A3/A1-A3_2013-08-18_80m_averaged.png','A1-A3/A1-A3_2013-08-18_80m_unaveraged.png');">Aug18</a>
+		 <a  onclick="displayImage('A1-A3/A1-A3_2013-08-19_80m_averaged.png','A1-A3/A1-A3_2013-08-19_80m_unaveraged.png');">Aug19</a>
+		 <a  onclick="displayImage('A1-A3/A1-A3_2013-08-20_80m_averaged.png','A1-A3/A1-A3_2013-08-20_80m_unaveraged.png');">Aug20</a> 
+
+		 <a  onclick="displayImage('A1-A3/A1-A3_2013-08-21_80m_averaged.png','A1-A3/A1-A3_2013-08-21_80m_unaveraged.png');">Aug21</a>
+		 <a  onclick="displayImage('A1-A3/A1-A3_2013-08-22_80m_averaged.png','A1-A3/A1-A3_2013-08-22_80m_unaveraged.png');">Aug22</a>
+		 <a  onclick="displayImage('A1-A3/A1-A3_2013-08-23_80m_averaged.png','A1-A3/A1-A3_2013-08-23_80m_unaveraged.png');">Aug23</a>
+		 <a  onclick="displayImage('A1-A3/A1-A3_2013-08-24_80m_averaged.png','A1-A3/A1-A3_2013-08-24_80m_unaveraged.png');">Aug24</a>
+		 <a  onclick="displayImage('A1-A3/A1-A3_2013-08-25_80m_averaged.png','A1-A3/A1-A3_2013-08-25_80m_unaveraged.png');">Aug25</a>
+		 <a  onclick="displayImage('A1-A3/A1-A3_2013-08-26_80m_averaged.png','A1-A3/A1-A3_2013-08-26_80m_unaveraged.png');">Aug26</a>
+		 <a  onclick="displayImage('A1-A3/A1-A3_2013-08-27_80m_averaged.png','A1-A3/A1-A3_2013-08-27_80m_unaveraged.png');">Aug27</a>
+		 <a  onclick="displayImage('A1-A3/A1-A3_2013-08-28_80m_averaged.png','A1-A3/A1-A3_2013-08-28_80m_unaveraged.png');">Aug28</a>
+		 <a  onclick="displayImage('A1-A3/A1-A3_2013-08-29_80m_averaged.png','A1-A3/A1-A3_2013-08-29_80m_unaveraged.png');">Aug29</a>
+		 <a  onclick="displayImage('A1-A3/A1-A3_2013-08-30_80m_averaged.png','A1-A3/A1-A3_2013-08-30_80m_unaveraged.png');">Aug30</a>
+		 <a  onclick="displayImage('A1-A3/A1-A3_2013-08-31_80m_averaged.png','A1-A3/A1-A3_2013-08-31_80m_unaveraged.png');">Aug31</a>
+	</div>	
+	<div class= "prevNext">
+		<div id="prev">
+			<a id="prevMonth" href="a1-a3june.html"><img id="nextButton" src="images/prev.png"/></a>
+		</div>
+		<div id="next">
+			<a id="nextMonth" href="a1-a3september.html"><img id="nextButton" src="images/next.png"/></a>
+		</div>
+		<div class="clear"></div>
+	</div>
+
+	<div id="rad_container">
+		<div id="sideBar">
+				<div id="navList">
+					<!-- <a href="" id="ret" onclick="gotoRetAddr('ret');">Back</a></br> -->
+					<a href="a1august.html" >Link to A1</a></br>
+					<a href="a2august.html" >Link to A2</a></br>
+					<a href="a3august.html" >Link to A3</a></br>
+					<a href="a1-a2august.html" >A1-A2</a></br>
+					<a href="" id="home" onclick="goHome();">Home</a></br>
+				</div>
+				
+		</div>
+
+
+		<div id="curImage">
+			<img  id="Image1" src="A1-A3/A1-A3_2013-08-01_80m_averaged.png" alt="A1-A3/A1-A3_2013-08-01_80m_averaged.png" title="A1-A3/A1-A3_2013-08-01_80m_averaged.png" />
+			<img  id="Image2" src="A1-A3/A1-A3_2013-08-01_80m_unaveraged.png" alt="A1-A3/A1-A3_2013-08-01_80m_unaveraged.png" title="A1-A3/A1-A3_2013-08-01_80m_unaveraged.png" />
+		</div>
+
+		<div class="clear"></div>
+	</div>
+
+	</div>
+
+	
+ <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-43811013-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</body>
+</html>

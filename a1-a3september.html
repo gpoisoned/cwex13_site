@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>A1- A3 September 2013</title>
+</head>
+	<link rel="stylesheet" type="text/css" href="pages.css">
+	<script type="text/javascript" src="js/global_rad.js"></script>
+
+	<script type="text/javascript">
+		function init(){
+
+				var query_str =  splitQueryString(getQueryString());
+
+				requestedImg = query_str[0];	
+				setRetAddr(query_str[1]);
+				
+				if (typeof(requestedImg) == "undefined"){
+					showImage1('A1-A3/A1-A3_2013-09-01_80m_averaged.png');
+					showImage2('A1-A3/A1-A3_2013-09-01_80m_unaveraged.png');
+				}
+
+				removeQueryString();
+			}	
+
+	</script>
+
+</head>
+
+	<body onload="init();">
+		
+	<div id="mainContent">	
+	<div id="navBar">	
+		 <a  onclick="displayImage('A1-A3/A1-A3_2013-09-01_80m_averaged.png','A1-A3/A1-A3_2013-09-01_80m_unaveraged.png');">Sep1</a>
+		 <a  onclick="displayImage('A1-A3/A1-A3_2013-09-02_80m_averaged.png','A1-A3/A1-A3_2013-09-02_80m_unaveraged.png');">Sep2</a>
+		 <a  onclick="displayImage('A1-A3/A1-A3_2013-09-03_80m_averaged.png','A1-A3/A1-A3_2013-09-03_80m_unaveraged.png');">Sep3</a>
+		 <a  onclick="displayImage('A1-A3/A1-A3_2013-09-04_80m_averaged.png','A1-A3/A1-A3_2013-09-04_80m_unaveraged.png');">Sep4</a>
+		 <a  onclick="displayImage('A1-A3/A1-A3_2013-09-05_80m_averaged.png','A1-A3/A1-A3_2013-09-05_80m_unaveraged.png');">Sep5</a>
+	</div>	
+	<div class= "prevNext">
+		<div id="prev">
+			<a id="prevMonth" href="a1-a3august.html"><img id="nextButton" src="images/prev.png"/></a>
+		</div>
+		
+		<div class="clear"></div>
+	</div>
+
+	<div id="rad_container">
+		<div id="sideBar">
+				<div id="navList">
+					<!-- <a href="" id="ret" onclick="gotoRetAddr('ret');">Back</a></br> -->
+					<a href="a1september.html" >Link to A1</a></br>
+					<a href="a2september.html" >Link to A2</a></br>
+					<a href="a3september.html" >Link to A3</a></br>
+					<a href="a1-a2september.html" >A1-A2</a></br>
+					<a href="" id="home" onclick="goHome();">Home</a></br>
+				</div>
+				
+		</div>
+
+
+		<div id="curImage">
+			<img  id="Image1" src="A1-A3/A1-A3_2013-09-01_80m_averaged.png" alt="A1-A3/A1-A3_2013-09-01_80m_averaged.png" title="A1-A3/A1-A3_2013-09-01_80m_averaged.png" />
+			<img  id="Image2" src="A1-A3/A1-A3_2013-09-01_80m_unaveraged.png" alt="A1-A3/A1-A3_2013-09-01_80m_unaveraged.png" title="A1-A3/A1-A3_2013-09-01_80m_unaveraged.png" />
+		</div>
+
+		<div class="clear"></div>
+	</div>
+
+	</div>
+
+	
+ <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-43811013-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</body>
+</html>
