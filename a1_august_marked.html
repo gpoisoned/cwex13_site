@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Site A1 August 2013</title>
+</head>
+	<link rel="stylesheet" type="text/css" href="pages.css">
+		
+		<script type="text/javascript" src="js/global.js"></script>
+		<script type="text/javascript">
+		
+			function init(){
+
+				requestedImg = getQueryString();
+				if (typeof(requestedImg) == "undefined"){
+					showImage('marked_contour/A1-Aug01.png');
+				}
+				else{
+					showImage(requestedImg);
+				}
+
+				removeQueryString();
+			}			
+
+			function gotoSite(x,idname){
+				var curImg = global_CurrentImage;
+				var destImg = x + curImg.split("-")[1];
+				document.getElementById(idname).href = destImg;
+			}
+
+		</script>
+				
+	</head>
+	<body onload="init();">
+	<div id="mainContent">
+		
+	<div id="navBar">
+		 <a href="javascript:void(0);" onclick="showImage('marked_contour/A1-Aug01.png');">Aug1</a>
+		 <a href="javascript:void(0);" onclick="showImage('marked_contour/A1-Aug02.png');">Aug2</a>
+		 <a href="javascript:void(0);" onclick="showImage('marked_contour/A1-Aug03.png');">Aug3</a>
+		 <a href="javascript:void(0);" onclick="showImage('marked_contour/A1-Aug04.png');">Aug4</a>
+		 <a href="javascript:void(0);" onclick="showImage('marked_contour/A1-Aug05.png');">Aug5</a>
+		 <a href="javascript:void(0);" onclick="showImage('marked_contour/A1-Aug06.png');">Aug6</a>
+		 <a href="javascript:void(0);" onclick="showImage('marked_contour/A1-Aug07.png');">Aug7</a>
+		 <a href="javascript:void(0);" onclick="showImage('marked_contour/A1-Aug08.png');">Aug8</a>
+		 <a href="javascript:void(0);" onclick="showImage('marked_contour/A1-Aug09.png');">Aug9</a>
+		 <a href="javascript:void(0);" onclick="showImage('marked_contour/A1-Aug10.png');">Aug10</a>
+		 <a href="javascript:void(0);" onclick="showImage('marked_contour/A1-Aug11.png');">Aug11</a>
+		 <a href="javascript:void(0);" onclick="showImage('marked_contour/A1-Aug12.png');">Aug12</a>
+		 <a href="javascript:void(0);" onclick="showImage('marked_contour/A1-Aug13.png');">Aug13</a>
+		 <a href="javascript:void(0);" onclick="showImage('marked_contour/A1-Aug14.png');">Aug14</a>
+		 <a href="javascript:void(0);" onclick="showImage('marked_contour/A1-Aug15.png');">Aug15</a>
+		 <a href="javascript:void(0);" onclick="showImage('marked_contour/A1-Aug16.png');">Aug16</a>
+		 <a href="javascript:void(0);" onclick="showImage('marked_contour/A1-Aug17.png');">Aug17</a>
+		 <a href="javascript:void(0);" onclick="showImage('marked_contour/A1-Aug18.png');">Aug18</a>
+		 <a href="javascript:void(0);" onclick="showImage('marked_contour/A1-Aug19.png');">Aug19</a>
+		 <a href="javascript:void(0);" onclick="showImage('marked_contour/A1-Aug20.png');">Aug20</a>
+		 <a href="javascript:void(0);" onclick="showImage('marked_contour/A1-Aug21.png');">Aug21</a>
+		 <a href="javascript:void(0);" onclick="showImage('marked_contour/A1-Aug22.png');">Aug22</a>
+		 <a href="javascript:void(0);" onclick="showImage('marked_contour/A1-Aug23.png');">Aug23</a>
+		 <a href="javascript:void(0);" onclick="showImage('marked_contour/A1-Aug24.png');">Aug24</a>
+		 <a href="javascript:void(0);" onclick="showImage('marked_contour/A1-Aug25.png');">Aug25</a>
+		 <a href="javascript:void(0);" onclick="showImage('marked_contour/A1-Aug26.png');">Aug26</a>
+		 <a href="javascript:void(0);" onclick="showImage('marked_contour/A1-Aug27.png');">Aug27</a>
+		 <a href="javascript:void(0);" onclick="showImage('marked_contour/A1-Aug28.png');">Aug28</a>
+		 <a href="javascript:void(0);" onclick="showImage('marked_contour/A1-Aug29.png');">Aug29</a>
+		 <a href="javascript:void(0);" onclick="showImage('marked_contour/A1-Aug30.png');">Aug30</a>
+		 <a href="javascript:void(0);" onclick="showImage('marked_contour/A1-Aug31.png');">Aug31</a>
+	</div>	
+	
+	<div class= "prevNext">
+		<div id="prev">
+			<a id="prevMonth" href="a1_july_marked.html" ><img id="prevButton" src="images/prev.png"/></a>
+		</div>
+		<div id="next">
+			<a id="nextMonth" href="a1_september_marked.html" ><img id="nextButton" src="images/next.png"/></a>
+		</div>
+		<div class="clear"></div>
+	</div>
+
+	<div id="container">
+		<div id="sideBar">
+				<div id="navList">
+					<a href="" id="home" onclick="goHome();">Home</a></br>
+					
+				</div>
+				
+		</div>
+
+
+		<div id="curImage">
+			<img  id="Image" src="marked_contour/A1-Aug01.png" alt="marked_contour/A1-Aug01.png" title="marked_contour/A1-Aug01.png" />
+		</div>
+
+		<div class="clear"></div>
+	</div>
+	
+	</div>
+
+
+	
+ <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-43811013-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+
+</body>
+</html>
